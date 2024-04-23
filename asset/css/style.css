@@ -1,0 +1,92 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+/* All Variable */
+:root {
+    --transition: all 0.5s;
+    --brand-color: #146C94;
+    --dark: #040b14;
+    --background: #146C94;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition);
+    color: #0675a8b2;
+}
+
+body {
+    background: var(--background);
+    font-family: "Open Sans", sans-serif;
+}
+
+small {
+    color: var(--brand-color);
+}
+
+p {
+    font-size: 15px;
+}
+
+.btn-md {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(42, 44, 46, 0.15);
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: var(--transition);
+    margin: 0 3px;
+}
+
+.btn-md:hover {
+    background: #fff !important;
+    color: rgba(0, 0, 0, .8) !important;
+}
+
+.line {
+    border: 1px solid rgba(34, 36, 38, .15);
+    ;
+    margin: 5px auto 15px;
+    max-width: 580px;
+    text-align: center;
+}
+
+/* Navbar */
+/* .nav .nabvar-link{
+    font-weight: 700;
+    color : var(--dark);
+}
+.nav .nabvar-link.active{
+    color : var(--brand-color);
+}
+.nav .nabvar-link:hover{
+    color : var(--brand-color);
+} */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-links li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 2px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 700;
+}
+.nav-links li a.active{
+    color: var(--brand-color);
+}
+.nav-links li a:hover{
+    color: var(--brand-color);
+}
